@@ -185,9 +185,9 @@ if __name__ == "__main__":
     args = parse_arguments()
     oauth_cfg = init_oauth_config(args)
 
-    # Account for bug in databricks-sdk-py oauth.py
+    # Workaround for bug in databricks-sdk-py oauth.py
     # Scopes incomplete for calling model serving on Azure.
-    # PR pending
+    # See PR https://github.com/databricks/databricks-sdk-py/pull/599
     oauth_cfg._scopes.append("all-apis")
     
     app = create_flask_app(oauth_cfg, args.port)
