@@ -6,7 +6,7 @@ These steps walk through the configuration needed for an application to query a 
     Create an App registration for your application in Microsoft Entra ID.
     This manages the Entra ID login for your users to the application itself.
 
-2. Install the [databricks cli](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/install) and the [databricks python sdk](https://docs.databricks.com/en/dev-tools/sdk-python.html#get-started-with-the-databricks-sdk-for-python) in your Python environment. Be certain to install at least version 0.21.0.
+2. Install the [databricks cli](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/install) and the [databricks python sdk](https://docs.databricks.com/en/dev-tools/sdk-python.html#get-started-with-the-databricks-sdk-for-python) in your Python environment. The databricks python sdk should be version `databricks-sdk-0.21.0` or later.
 
 3. Create an Azure Databricks Account authentication profile. Choose a Databricks profile name (ex: `AzureAcct`). You will be prompted for your Azure Databricks account ID which you can obtain from your account console at [account.azuredatabricks.com](https://account.azuredatabricks.com).
 
