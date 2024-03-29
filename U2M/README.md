@@ -26,8 +26,7 @@ These steps walk through the configuration needed for an application to query a 
     * The list of OAuth scopes required for your application to access Databricks APIs. For model serving API access, `all-apis` is required. For endpoints on Azure Databricks, scopes `offline_access` and `user_impersonation` are required.
 
     ```shell
-    > databricks account custom-app-integration create --confidential \
-    > --json '{"name":"flask_app_with_oauth", "redirect_urls":[http://localhost:5001/callback], "scopes":["all-apis","offline_access","user_impersonation"]}' –-debug
+    > databricks account custom-app-integration create --confidential --json '{"name":"flask_app_with_oauth", "redirect_urls":[http://localhost:5001/callback], "scopes":["all-apis","offline_access","user_impersonation"]}' –-debug
     ```
 
     The output should be similar to the following:
