@@ -1,6 +1,6 @@
-# Querying a Model Serving Endpoint using U2M OAuth Authentication
+# Querying a Databricks Model Serving Endpoint using U2M OAuth Authentication
 
-These steps walk through the configuration needed for an application to query a Databricks model serving endpoint using U2M OAuth for authentication instead of a personal access token.
+These steps walk through the configuration needed for an application to query a Databricks model serving endpoint using U2M OAuth for authentication instead of a personal access token. This example is adapted from the Databricks Python SDK example, [flask_app_with_oauth.py](https://github.com/databricks/databricks-sdk-py/blob/main/examples/flask_app_with_oauth.py), to call a model serving endpoint vs a general Databricks API.
 
 1. Create a Microsoft Entra ID App Registration
     Create an App registration for your application in Microsoft Entra ID.
